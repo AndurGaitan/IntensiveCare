@@ -21,9 +21,12 @@ export const Layout = () => {
           <nav className="space-y-2">
             {[
               { name: 'Dashboard', path: '/dashboard' },
-              { name: 'Patients', path: '/patientsList' },
+              { name: 'Patientes Kinesiología', path: '/patientsList' },
               { name: 'AI Support', path: '/aiSupport' },
-              {name:'Patient Comunicator', path: '/patientComunicator'}
+              {name:'Critical Conect', path: '/patientComunicator'},
+              {name:'Paciente Critico', path: '/patientDetail'},
+              {name:'Evaluaciones', path:'/clinicalEvaluation'},
+              {name:'Grafico Evaluaciones', path:'/digitalRecords'}
             ].map(({ name, path }) => (
               <Link
                 key={name}

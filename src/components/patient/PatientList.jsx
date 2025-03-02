@@ -50,13 +50,13 @@ export const PatientList = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold">Patients</h2>
+        <h2 className="text-2xl font-bold">Patientes</h2>
         <button
           onClick={() => setIsModalOpen(true)}
           className="flex items-center gap-2 px-4 py-2 bg-[#0A89FB] text-white rounded-lg hover:bg-[#0A89FB]/90 transition-colors"
         >
           <Plus size={20} />
-          Add Patient
+          Agregar Paciente
         </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

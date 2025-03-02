@@ -1,5 +1,5 @@
 import React from "react";
-import { Activity, Heart, Thermometer, Wind } from "lucide-react";
+import { Activity, Heart, Thermometer, Wind, BicepsFlexed } from "lucide-react";
 
 export const PatientCard = ({ patient }) => {
   const getStatusColor = (status) => {
@@ -47,6 +47,11 @@ export const PatientCard = ({ patient }) => {
           <Wind className="w-4 h-4 text-purple-500" />
           <span className="text-gray-600">O₂ Level:</span>
           <span className="font-medium">{patient.vitalSigns.oxygenLevel}%</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <BicepsFlexed className="w-4 h-4 text-orange-500" />
+          <span className="text-gray-600">MRC:</span>
+          <span className="font-medium">{patient.vitalSigns.oxygenLevel}</span>
         </div>
       </div>
     </div>
